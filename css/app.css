@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0; 
+  background-color: #fff5ee;
+  
+}
+
+#wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+   
+
+}
+
+header {
+    height: auto;
+    background-color: #b0c4de;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 20px;
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+.cast {
+    text-align: center;
+    background-color: white;
+
+}
+
+.advert {
+    background-color: transparent;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.advert2 {
+    background-color: transparent;
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+}
+
+.columns {
+    margin-top: 20px;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.healthbar {
+    width: 80%;
+    height: 40px;
+    background-color: white;
+    margin: auto;
+    transition: width 500ms;
+    border: 1px solid grey;
+}
+
+.controls, .log {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 3px 6px #ccc;
+}
+
+.instruction {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    font-style: italic;
+}
+
+.rulesHead {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.rules {
+    padding-left: 20px;
+}
+
+.goodbye{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.turn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.log ul {
+    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.log ul li {
+    margin: 5px;
+}
+
+.log ul .player-turn {
+    color: blue;
+    background-color: #90ee90;
+}
+
+.log ul .monster-turn {
+    color: red;
+    background-color: #b0c4de;
+}
+
+button {
+    font-size: 20px;
+    background-color: #eee;
+    padding: 12px;
+    box-shadow: 0 1px 1px black;
+    margin: 10px;
+}
+
+.start {
+    padding-top: 10px;
+    padding-bottom: -10px;
+    font-style: italic;
+}
+#start-game {
+    background-color: #aaffb0;
+    margin-bottom: 25px;
+}
+
+#start-game:hover {
+    background-color: #76ff7e;
+}
+
+#attack {
+    background-color: #ff7367;
+}
+
+#attack:hover {
+    background-color: #ff3f43;
+}
+
+#special-attack {
+    background-color: gold;
+}
+
+#special-attack:hover {
+    background-color: #ff9a2b;
+}
+
+#heal {
+    background-color:gold;
+}
+
+#heal:hover {
+    background-color: #76ff7e;
+}
+
+#give-up {
+    background-color: orange;
+}
+
+#give-up:hover {
+    background-color: #c7c7c7;
+}
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}

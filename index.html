@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">  
+    <title>PollGames | Zimbabwe</title>
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+<header>2018 Zimbabwe Elections Game</header>
+<div class="advert">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+             <!-- pollsGame -->
+             <ins class="adsbygoogle"
+             style="display:inline-block;width:728px;height:90px"
+             data-ad-client="ca-pub-2967170333866007"
+             data-ad-slot="1350099526"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+</div>
+<h2 class="cast animated bounceIn">Cast Your Vote Now!</h2>
+
+<div id="wrapper">
+<div id="app">
+    <section class="row">
+        <div class="small-6 columns">
+            <h1 class="text-center">OPPOSITION</h1>
+            <div class="healthbar">
+                <div
+                        class="healthbar text-center"
+                        style="background-color: green; margin: 0; color: black;"
+                        :style="{width: voterBallot + '%'}">
+                    {{ voterBallot }}
+                </div>
+            </div>
+        </div>
+        <div class="small-6 columns">
+            <h1 class="text-center">MUGABE</h1>
+            <div class="healthbar">
+                <div
+                        class="healthbar text-center"
+                        style="background-color: green; margin: 0; color: black;"
+                        :style="{width: presidentBallot + '%'}">
+                    {{ presidentBallot }}
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+    <section class="row controls" v-if="!gameIsRunning">
+        <p class="start">Click button to start voting</p>
+        <div class="small-12 columns">
+            <button id="start-game" @click="startGame">START NEW VOTING</button>
+        </div>
+    </section>
+    <section class="row controls" v-else>
+    <p class="instruction"> Keep on clicking buttons until you win or lose</p>
+        <div class="small-12 columns">
+            <button id="attack" @click="attack">VOTE</button>
+            <button id="special-attack" @click="specialAttack">DIASPORA VOTE</button>
+            <button id="heal" @click="heal">RIG</button>
+            <button id="give-up" @click="giveUp">RESET</button>
+        </div>
+    </section>
+    <section class="row log" v-if="turns.length > 0">
+        <div class="small-12 columns">
+            <ul>
+                <li v-for="turn in turns"
+                    :class="{'player-turn': turn.isPlayer, 'monster-turn': !turn.isPlayer}">
+                    {{ turn.text }}
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class=" rulesrow">
+        <p class=" row rulesHead">Rules of the game</p>
+         <ol class="row rules">
+             <li>There are two presidential candidates, and a hundred (100) voters.</li>
+             <li>The presidential candidate who gets a 100 votes first is the winner of the election.</li>
+             <li>You the player are the single voter in the game and must keep clicking the 'vote' button until the winner is announced through a pop-up alert on the page.</li>
+             <li>Of course should the player/voter at anytime feel their candidate is losing, they are free to try the other 'juicy' buttons.</li>
+         </ol>
+          <h3 class="row goodbye">And happy voting dear beloved citizen!!</h3>
+    </div>
+    </div>
+    
+</div>
+<footer class="advert2">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- pollsGameFooter -->
+             <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2967170333866007"
+             data-ad-slot="7059745290"
+             data-ad-format="auto"></ins>
+        <script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</footer>
+<script src="min.js"></script>
+</body>
+</html>
