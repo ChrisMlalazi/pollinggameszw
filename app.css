@@ -2,15 +2,14 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0; 
-  background-color: #fff5ee;
+   background-color: #fff5ee;
+  
   
 }
 
 #wrapper {
     margin-left: 20px;
     margin-right: 20px;
-   
-
 }
 
 header {
@@ -37,6 +36,8 @@ header {
     text-align: center;
     padding-top: 5px;
 }
+
+
 
 .advert2 {
     background-color: transparent;
@@ -178,3 +179,11 @@ footer {
     margin-top: 100px;
     margin-bottom: 20px;
 }
+
+
+
+
+
+
+
+
