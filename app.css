@@ -40,10 +40,16 @@ header {
 
 
 .advert2 {
-    background-color: transparent;
     margin-top: 50px;
     width: 100%;
     height: 100px;
+}
+
+.advert3 {
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
 }
 
 .columns {
